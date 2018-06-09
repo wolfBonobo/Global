@@ -1,0 +1,26 @@
+{
+  "name": "global",
+  "version": "1.0.0",
+  "description": "Api with Mongodb and Express that returns countries and cities of the world with Geospatial Indexes. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Global",
+    "Pedro",
+    "Cuenca",
+    "Sacristan",
+    "Mongodb",
+    "Express",
+    "api"
+  ],
+  "author": "Pedro Cuenca Sacristán",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.10",
+    "mysql": "^2.15.0"
+  }
+}

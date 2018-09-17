@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Global</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <!-- Sidebar Header -->
+      <div class="sidebar-header">
+        <h4 class="geoHeader">
+          <a id="showMap" href="#geo" data-toggle="collapse" aria-expanded="false">Geolocation</a>
+        </h4>
+        <ul class="collapse list-unstyled" id="geo">
+          <form>
+            <label>Choose a Country</label>
+            <select class="custom-select countries" id="inputGroupSelect01">
+            </select>
+          </form>
+          <br>
+          <form>
+            <label for="tags">Search your City </label>
+            <input class="target" type="text" id="tags" placeholder="Type 3 characters:">
+          </form>
+          <br>
+          <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#geoModal">
+            Options
+          </button>
+          <button type="button" class="btn btn-success btn-block heat">
+            Cities Heat Map
+          </button>
+          <!-- Modal Geolocalizacion -->
+          <div class="modal fade" id="geoModal" tabindex="-1" role="dialog" aria-labelledby="markermodal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="markermodal">Marker Options</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <label id="radioLabel" for="radius">
+                      <h5>Radius</h5>
+                    </label>
+                    <input class="radius" type="text" id="radius" placeholder="radius in meters">
+                  </form>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success  marker">Location</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <!--End sidebar header-->
+      <a href="#geo" data-toggle="collapse" aria-expanded="false">
+        <img class="mx-auto d-block" src="img/global.png" alt="Responsive image" width="200px">
+      </a>
+      <ul class="list-unstyled components">
+        <li>
+          <a href="">reset</a>
+        </li>
+      </ul>
+
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content" class="container-fluid clearfix">
+
+      <button type="button" id="sidebarCollapse" class="btn btn-primary navbar-btn">
+        <i class="glyphicon glyphicon-align-right"></i>
+        Dashboard
+      </button>
+
+      <br>
+
+      <div id="googleMap" style="width:100%; height:100%;"></div>
+
+
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery.js" "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js " ></script>
+    <script src="js/request.js " ></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpKO55qEHMmmXufHUSGF3cJC2YP2FmLsk&libraries=visualization&callback=myMap "></script>
+  </body>
+</html>
